@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@1,500&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        body {
+            display: grid;
+            min-height: 100vh;
+            place-items: center;
+            background-color: #000;
+        }
+
+        .wave {
+            animation: wave 1s infinite ease-in-out;
+            font-size: 80px;
+            transform-origin: bottom right;
+            color: #00FF00; /* Cambia el color del emoji a verde */
+        }
+
+        @keyframes wave {
+            50% {
+                transform: rotate(30deg);
+            }
+        }
+
+        /* Estilos para el texto de agradecimiento */
+        p {
+            width: 0;
+            overflow: hidden;
+            white-space: nowrap;
+            font-size: 2rem;
+            color: white;
+            margin: 20px auto 250px; /* Aplicamos un margen superior de 20px y centrado horizontalmente */
+            font-family: 'Press Start 2P', cursive;
+            border-right: 0.15em solid #18bdec;
+            animation: typing 4s steps(38) 1s 1 normal both, blink 1s steps(1) infinite;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 100%;
+            }
+        }
+
+        @keyframes blink {
+            50% {
+                border-color: transparent;
+            }
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wave">👋</div>
+    <div>
+        <p>Gracias por la oportunidad <span style="font-size: 40px; color: rgb(255, 213, 0);" class="material-icons">
+               mood
+            </span></p>
+    </div>
+</body>
+</html>
